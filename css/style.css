@@ -1,0 +1,352 @@
+/* Variables */
+
+:root {
+    --basic-bacground: #F1F5F7;
+    --basic-red: #EE3643;
+    --basic-white: #FFFFFF;
+    --basic-dark-grey: #293449;
+    --basic-green: #63A63E;
+    --basic-light-grey: #B7BFC8;
+    --basic-grey: #32425C;
+    --basic-light: #F9F5F0;
+    --basic-black: #000000;
+    --basic-orange: #FFD180;
+    --basic-greylight: #C5C5C5;
+    --basic-background: #F1F5F7;
+    --features-light-orange: #FFBF47;
+    --features-blue: #3BBCE3;
+    --features-violet: #DC91D8;
+    --features-green: #8ED78F;
+    --features-orange: #FFC047;
+
+    --aiming-red: #EE3643;
+    --error: #BA2732;
+    --click-dark: #161D29;
+    --success-green: #5FBB2D;
+    --click-grey: #1D2739;
+    --click-lightgrey: #A9A9A9;
+    --buttom-aiming: #CA2C37;
+    --click-green: #518534;
+}
+
+/* Global */
+
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-white);
+    background-color: var(--basic-background);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.button {
+    background-color: var(--basic-red);
+    color: var(--basic-white);
+    font-size: 11px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+/* Main navigation */
+
+.logo {
+    background-color: var(--basic-red);
+}
+
+.caption {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-white);
+    background-color: var(--basic-dark-grey);
+}
+
+.main-header-logo:active {
+    background-color: var(--error);
+}
+
+.caption-search,
+.caption-bookmark,
+.caption-cart {
+    /*сделать окошко поиска серым, хз как*/
+    color: inherit;
+    background-color: transparent;
+}
+
+.caption-search::before {
+    /*добавить лого*/
+}
+
+.caption-bookmark::before {
+    /*добавить лого*/
+}
+
+.caption-cart::before {
+     /*добавить лого*/
+}
+
+.caption-search:hover,
+.caption-bookmark:hover,
+.caption-cart:hover {
+    /*поменять цвет лого - white*/
+}
+
+.caption-search:active
+.caption-cart:active {
+    opacity: 0.5;
+}
+
+.caption-search:focus {
+    background-color: var(--basic-white);
+}
+
+.caption-checkout {
+    background-color: var(--basic-green);
+}
+
+.caption-checkout:active {
+    opacity: 0.5;
+}
+
+/* Header contacts */
+
+.subject {
+    color: var(--basic-red);
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.contact{
+    color: var(--basic-grey);
+}
+
+.contact-phone a{
+    color: var(--basic-red);
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.contact-phone::before {
+    /*добавить лого*/
+}
+
+.contact-adress {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.login {
+    color: var(--basic-black);
+    font-size: 21px;
+    line-height: 21px;
+}
+
+/* Site navigation*/
+
+.site-navigation {
+    color: var(--basic-white);
+}
+
+.navigation-list {
+    list-style: none;
+    color: var(--basic-white);
+    background-color: var(--basic-grey);
+}
+
+.navigation-item a{
+    color: inherit;
+}
+
+/* Features */
+
+.features-item {
+    width: 300px;
+    height: 123px;
+    color: var(--basic-white);
+}
+
+.features-item h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.features-button {
+    color: inherit;
+    background-color: var(--basic-white);
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    opacity: 0.3;   /*не могу понять почему действует и на текст*/
+}
+
+.features-item-materials {
+    background-color: var(--features-light-orange);
+}
+
+.features-item-tools {
+    background-color: var(--features-blue);
+}
+
+.features-item-technics {
+    background-color: var(--features-violet);
+}
+
+.features-item-sale {
+    background-color: var(--features-green);
+}
+
+.features-item-delivery {
+    background-color: var(--features-orange);
+}
+
+/* Gallery */
+
+.gallery {
+    width: 620px;
+    height: 266px;
+    background-color: rgba(0, 0, 0, 0.0001);
+}
+
+.gallery-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+/* Popular */
+
+.popular {
+    width: 940px;
+    height: 89px;
+    background-color: var(--basic-light);
+}
+
+.popular h2 {
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--basic-grey);
+    text-transform: uppercase;
+}
+
+/* Catalog */
+
+.catalog-list {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: var(--basic-black);
+}
+
+.undiscounted {
+    font-size: 17px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.button-catalog {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Services */
+
+.services p,
+.desc {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--basic-black);
+}
+
+.services-title,
+.title {
+    color: var(--basic-black);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.services-button {
+    color: var(--basic-white);
+    background-color: var(--basic-grey);
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.services-button:active {
+    color: var(--basic-grey);
+    background-color: var(--basic-white);
+}
+
+.transport-item {
+    color: var(--basic-black);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/* Footer */
+
+.main-footer-nav {
+    background-color: var(--basic-grey);
+}
+
+.footer-phone {
+    color: inherit;
+}
+
+.benefits-list {
+    color: var(--basic-orange);
+    list-style: none;
+}
+
+.benefits-list a {
+    color: inherit;
+}
+
+.footer-contacts {
+    background-color: var(--basic-dark-grey);    
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.copyright {
+}
+
+.footer-social {
+    list-style: none;
+}
+
+.social-button,
+.footer-mail a,
+.footer-copyright a {
+    color: inherit;
+}
+
+
+

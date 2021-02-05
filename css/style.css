@@ -27,6 +27,9 @@
     --click-lightgrey: #A9A9A9;
     --buttom-aiming: #CA2C37;
     --click-green: #518534;
+
+    --button-background: rgba(255,255,255, .3);
+    --background-gallery: rgba(0, 0, 0, 0.0001);
 }
 
 /* Global */
@@ -39,7 +42,7 @@ body {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
-    color: var(--basic-white);
+    color: var(--basic-black);
     background-color: var(--basic-background);
 }
 
@@ -62,12 +65,15 @@ img {
     font-size: 11px;
     line-height: 18px;
     text-transform: uppercase;
+    appearance: none;
+    border: none;
 }
 
 /* Main navigation */
 
 .logo {
     background-color: var(--basic-red);
+    display: block;
 }
 
 .caption {
@@ -169,6 +175,7 @@ img {
     list-style: none;
     color: var(--basic-white);
     background-color: var(--basic-grey);
+    padding: 0;
 }
 
 .navigation-item a{
@@ -176,6 +183,11 @@ img {
 }
 
 /* Features */
+
+.features-list {
+    list-style: none;
+    padding: 0;
+}
 
 .features-item {
     width: 300px;
@@ -191,11 +203,10 @@ img {
 
 .features-button {
     color: inherit;
-    background-color: var(--basic-white);
+    background-color: var(--button-background);
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
-    opacity: 0.3;   /*не могу понять почему действует и на текст*/
 }
 
 .features-item-materials {
@@ -222,8 +233,8 @@ img {
 
 .gallery {
     width: 620px;
-    height: 266px;
-    background-color: rgba(0, 0, 0, 0.0001);
+    min-height: 266px;
+    background-color: var(--background-gallery);
 }
 
 .gallery-title {
@@ -250,6 +261,8 @@ img {
 /* Catalog */
 
 .catalog-list {
+    list-style: none;
+    padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 18px;
     line-height: 20px;
@@ -282,6 +295,11 @@ img {
     color: var(--basic-black);
 }
 
+.services-list {
+    list-style: none;
+    padding: 0;
+}
+
 .services-title,
 .title {
     color: var(--basic-black);
@@ -304,6 +322,11 @@ img {
     background-color: var(--basic-white);
 }
 
+.transport-list {
+    list-style: none;
+    padding: 0;
+}
+
 .transport-item {
     color: var(--basic-black);
     font-size: 18px;
@@ -323,6 +346,7 @@ img {
 .benefits-list {
     color: var(--basic-orange);
     list-style: none;
+    padding: 0;
 }
 
 .benefits-list a {
@@ -340,6 +364,7 @@ img {
 
 .footer-social {
     list-style: none;
+    padding: 0;
 }
 
 .social-button,

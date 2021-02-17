@@ -15,39 +15,44 @@
   <body class="page-body">
     <header class="main-header">
       <h1 class="hidden">Интернет-магазин «Техномарт»</h1>
-
-      <section class="caption">
-        <h2 class="hidden">Строка поиска</h2>
-        <a class="logo main-header-logo">
-          <img src="img/logo-technomart_108x18.svg" width="108" height="18" alt="Логотип интернет-магазина «Техномарт»">
-        </a>
-        <form class="caption-search">          
-          <label>
-            <input type="search" placeholder="Поиск:">
-          </label>
-        </form>
-
-        <a class="caption-bookmark" href="#">Закладки:0</a>
-
-        <a class="caption-cart" href="#">Корзина:0</a>
-
-        <a class="caption-checkout" href="#">Оформить заказ</a>
-
-      </section>
-
-      <p class="subject">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        
-      <section class="contact"> 
-        <h2 class="hidden">Как нас найти</h2>
-        <p class="contact-phone">
-          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-        </p>
-        <address class="contact-adress">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</address>
-      </section>
       
-      <div class="login">
-        <a class="login-link" href="#">Войти</a>
-        <a class="login-registration" href="#">Регистрация</a>  
+      <div class="main-header-bar">
+        <div class="caption">
+          <h2 class="hidden">Строка поиска</h2>
+          <a class="logo main-header-logo">
+            <img src="img/logo-technomart_108x18.svg" width="108" height="18" alt="Логотип интернет-магазина «Техномарт»">
+          </a>
+          <form class="caption-search">          
+            <label>
+              <input type="search" placeholder="Поиск:">
+            </label>
+          </form>
+  
+          <a class="caption-bookmark" href="#">Закладки:0</a>
+  
+          <a class="caption-cart" href="#">Корзина:0</a>
+  
+          <a class="caption-checkout" href="#">Оформить заказ</a>
+        </div>
+      </div>
+
+      <div class="main-header-info">
+        <p class="subject">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        
+        <div class="contact"> 
+          <h2 class="hidden">Как нас найти</h2>
+          <p class="contact-phone">
+            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+          </p>
+          <address class="contact-adress">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</address>
+        </div>
+
+        <div class="login">
+          <a class="login-link" href="#">Войти</a>
+        </div>
+        <div class="login">
+          <a class="login-registration" href="#">Регистрация</a>  
+        </div>  
       </div>
       
       <nav class="site-navigation">
@@ -64,7 +69,7 @@
     </header>
 
     <main class="container">
-      <section class="features">
+      <div class="features">
         <h2 class="hidden">Преимущества</h2>
           <ul class="features-list">
             <li class="features-item">
@@ -98,21 +103,22 @@
               </div>
             </li>
           </ul>
-      </section>
+        
+          <section class="gallery">
+            <h2 class="hidden">Фотогалерея</h2>
+            <h3 class="gallery-title">Перфораторы</h3>
+            <p class="gallery-text">Настоящие мужские игрушки</p>
+            <figure class="gallery-content">
+              <a href="#">
+                <img src="img/worker.png" width="620" height="266" alt="Мужчина с перфоратором">
+              </a>
+            </figure>
+            <button class="arrow arrow-back" type="button" disabled>Назад</button>
+            <button class="arrow arrow-next" type="button">Вперед</button>
+            <button class="button" type="button">Открыть каталог</button>
+          </section>
+        </div>
 
-      <section class="gallery">
-        <h2 class="hidden">Фотогалерея</h2>
-        <h3 class="gallery-title">Перфораторы</h3>
-        <p class="gallery-text">Настоящие мужские игрушки</p>
-        <figure class="gallery-content">
-          <a href="#">
-            <img src="img/worker.png" width="620" height="266" alt="Мужчина с перфоратором">
-          </a>
-        </figure>
-        <button class="arrow arrow-back" type="button" disabled>Назад</button>
-        <button class="arrow arrow-next" type="button">Вперед</button>
-        <button class="button" type="button">Открыть каталог</button>
-      </section>
       
       <section>
         <div class="popular">
@@ -202,7 +208,7 @@
           </li>
         </ul>
 
-        <h3 class="services-title">Доставка</h3>   <!--Здесь будет слайдер, плюс еще два элемента-->
+        <h3 class="services-title">Доставка</h3>  
         <p class="desc">Мы с удовольствием доставим ваш товар прямо<br>
           к вашему подъезду совершенно бесплатно!<br>
           Ведь мы неплохо заработаем,<br>
@@ -311,5 +317,6 @@
       </div>
 
     </footer>
+
   </body>
 </html>

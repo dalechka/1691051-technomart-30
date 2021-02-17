@@ -47,6 +47,11 @@ body {
     font-weight: 400;
     color: var(--basic-black);
     background-color: var(--basic-white);
+
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
 }
 
 a {
@@ -72,16 +77,29 @@ img {
     border: none;
 }
 
-/* Main navigation */
-
-.main-header {
-    background-color: var(--basic-background);
-}
-
-
 .logo {
     background-color: var(--basic-red);
     display: block;
+    text-align: center;
+    padding-top: 12px;
+}
+
+/* Grid */
+
+.page {
+    height: 100%;
+  }
+
+/* Main navigation */
+
+.main-header-bar {
+    background-color: var(--basic-dark-grey);
+}
+
+.main-header {    
+    width: 940px;
+    margin: 0 auto;
+    display: grid;
 }
 
 .caption {
@@ -89,10 +107,35 @@ img {
     line-height: 24px;
     color: var(--basic-white);
     background-color: var(--basic-dark-grey);
+    display: grid;
+    grid-template-columns: 220px 1fr 120px 140px 150px;
+}
+.main-header-logo {
+    width: 220px;
+    height: 47px;
+    grid-column-start: 1;
+    vertical-align: middle;
 }
 
 .main-header-logo:active {
     background-color: var(--error);
+}
+
+.caption-search {
+    grid-column-start: 2;
+
+}
+
+.caption-bookmark{
+    grid-column-start: 3;
+}
+
+.caption-cart {
+    grid-column-start: 4;
+}
+
+.caption-checkout {
+    grid-column-start: 5;
 }
 
 .caption-search,
@@ -141,15 +184,27 @@ img {
 
 /* Header contacts */
 
+.main-header-info {
+    display: grid;
+    grid-template-columns: 300px 300px 140px 140px;
+    gap: 20px;
+}
+
 .subject {
     color: var(--basic-red);
     font-style: italic;
     font-size: 16px;
     line-height: 23px;
+    outline: 5px solid rgba(55, 0, 255, 0.7);
+    outline-offset: -5px;
+  
 }
 
 .contact{
     color: var(--basic-grey);
+    outline: 5px solid rgba(151, 21, 202, 0.651);
+    outline-offset: -5px;
+  
 }
 
 .contact-phone a{
@@ -168,6 +223,11 @@ img {
     line-height: 24px;
 }
 
+.login {
+    outline: 5px solid rgba(172, 209, 40, 0.7);
+    outline-offset: -5px;  
+}
+
 .login a{
     color: var(--basic-black);
     font-size: 21px;
@@ -178,6 +238,9 @@ img {
 
 .site-navigation {
     color: var(--basic-white);
+    outline: 5px solid rgba(206, 18, 96, 0.7);
+    outline-offset: -5px;
+  
 }
 
 .navigation-list {
@@ -346,6 +409,10 @@ img {
 }
 
 /* Footer */
+
+.main-footer {
+
+}
 
 .main-footer-nav {
     background-color: var(--basic-grey);

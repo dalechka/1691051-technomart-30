@@ -13,6 +13,7 @@
     --basic-orange: #FFD180;
     --basic-greylight: #C5C5C5;
     --basic-background: #F1F5F7;
+    --basic-border: #EAEAEA;
 
     --inner-sorting: #F7F3EC;
 
@@ -84,6 +85,11 @@ img {
     padding-top: 12px;
 }
 
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
 /* Grid */
 
 .page {
@@ -93,12 +99,11 @@ img {
 /* Main navigation */
 
 .main-header-bar {
+    width: 100%;
     background-color: var(--basic-dark-grey);
 }
 
 .main-header {    
-    width: 940px;
-    margin: 0 auto;
     display: grid;
 }
 
@@ -143,7 +148,7 @@ img {
 .caption-cart {
     /*сделать окошко поиска серым*/
     color: inherit;
-    background-color: transparent;
+    background-color: var(--basic-dark-grey);
 }
 
 .caption-search::before {
@@ -194,17 +199,11 @@ img {
     color: var(--basic-red);
     font-style: italic;
     font-size: 16px;
-    line-height: 23px;
-    outline: 5px solid rgba(55, 0, 255, 0.7);
-    outline-offset: -5px;
-  
+    line-height: 23px;  
 }
 
 .contact{
     color: var(--basic-grey);
-    outline: 5px solid rgba(151, 21, 202, 0.651);
-    outline-offset: -5px;
-  
 }
 
 .contact-phone a{
@@ -224,8 +223,6 @@ img {
 }
 
 .login {
-    outline: 5px solid rgba(172, 209, 40, 0.7);
-    outline-offset: -5px;  
 }
 
 .login a{
@@ -238,9 +235,6 @@ img {
 
 .site-navigation {
     color: var(--basic-white);
-    outline: 5px solid rgba(206, 18, 96, 0.7);
-    outline-offset: -5px;
-  
 }
 
 .navigation-list {
@@ -248,6 +242,7 @@ img {
     color: var(--basic-white);
     background-color: var(--basic-grey);
     padding: 0;
+    display: flex;
 }
 
 .navigation-item a{
@@ -256,9 +251,23 @@ img {
 
 /* Features */
 
+.features {
+    display: grid;
+    grid-template-columns: 620px 1fr;
+    grid-template-rows: min-content auto;
+}
+
 .features-list {
     list-style: none;
     padding: 0;
+    grid-column: 1/-1;
+    display: flex;
+}
+
+.features-facilities {
+    list-style: none;
+    padding: 0;
+    order: 1;
 }
 
 .features-item {
@@ -307,6 +316,8 @@ img {
     width: 620px;
     min-height: 266px;
     background-color: var(--background-gallery);
+    outline: red 1px solid;
+    overflow: hidden;
 }
 
 .gallery-title {
@@ -321,6 +332,9 @@ img {
     width: 940px;
     height: 89px;
     background-color: var(--basic-light);
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    margin-top: 59px;
 }
 
 .popular h2 {
@@ -328,9 +342,22 @@ img {
     line-height: 30px;
     color: var(--basic-grey);
     text-transform: uppercase;
+    padding-left: 30px;
+}
+
+.popular .button {
+    width: 192px;
+    height: 38px;
+    margin-top: 25px;
+    margin-left: 14px;
 }
 
 /* Catalog */
+
+.catalog {
+    width: 940px;
+    min-height: 427px;
+}
 
 .catalog-list {
     list-style: none;
@@ -339,10 +366,18 @@ img {
     font-size: 18px;
     line-height: 20px;
     font-weight: 700;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 318px;
+    gap: 20px;
 }
 
 .catalog-item a{
     color: inherit;
+}
+
+.catalog-item {
+    border: var(--basic-border) 1px solid;
 }
 
 .undiscounted {
@@ -359,7 +394,41 @@ img {
     text-transform: uppercase;
 }
 
+/* Manufacturer*/
+
+.manufacturer {
+    min-height: 145px;
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    grid-template-rows: repeat(2, 145px);
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.manufacturer-item {
+    width: 220px;
+    height: 145px;
+    border: var(--basic-border) 1px solid;
+}
+
 /* Services */
+
+.services { /*почему-то блок не центрируется*/
+    background-color: var(--basic-bacground);
+    width: 100%;
+    min-height: 522px;
+    justify-self: center;
+    margin-top: 70px;
+    padding-top: 64px;
+    padding-left: 130px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 235px 1fr;
+}
+
+.services-wrap {
+    grid-column: 1/-1;
+}
 
 .services p,
 .desc {
@@ -397,6 +466,16 @@ img {
     background-color: var(--basic-white);
 }
 
+/* About */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 180px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
 .transport-list {
     list-style: none;
     padding: 0;
@@ -410,12 +489,16 @@ img {
 
 /* Footer */
 
-.main-footer {
+.main-footer-logo {
+    width: 138px;
+    height: 68px;
+    text-align: center;
 
 }
 
 .main-footer-nav {
     background-color: var(--basic-grey);
+    width: 100%;
 }
 
 .footer-phone {
@@ -436,6 +519,7 @@ img {
     background-color: var(--basic-dark-grey);    
     font-size: 16px;
     line-height: 18px;
+    margin-top: 0;
 }
 
 .footer-social {

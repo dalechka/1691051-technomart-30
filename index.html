@@ -126,7 +126,7 @@
           <h2>Популярные товары:</h2>
           <button class="button" type="button">все популярные товары</button>     
         </div>
-        <div class="catalog">
+        <div class="catalog-main">
           <ul class="catalog-list">
             <li class="catalog-item">
               <a href="#">
@@ -200,7 +200,7 @@
       </div>  
 
       <section class="services">
-        <div class="services-wrap">
+        <div class="services-wrap container">
           <h2 class="services-title">Сервисы</h2>
           <p class="desc">Хороший интернет-магазин отличается от плохого не только ценами!<br>
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
@@ -254,13 +254,15 @@
     <footer class="main-footer container">
       <section class="main-footer-nav">
         <h2 class="hidden">Как нас найти</h2>
-        <a class="logo main-footer-logo">
-          <img src="img/logo-technomart_138x23.svg" width="220" height="68" alt="Логотип интернет-магазина «Техномарт»">
-        </a>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
-        <p>
-          <a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-        </p>
+        <div class="main-contacts">
+          <a class="logo main-footer-logo">
+            <img src="img/logo-technomart_138x23.svg" width="220" height="68" alt="Логотип интернет-магазина «Техномарт»">
+          </a>
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
+          <p> 
+            <a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          </p>
+        </div>
 
         
         <ul class="navigation-list">
@@ -298,33 +300,35 @@
       </section>
 
       <div class="footer-contacts">
-        <p class="copyright">© 2010–2019 Компания «Техномарт»<br>
-          Все права защищены</p>
-  
-        <section>
-          <h2 class="hidden">Давайте дружить!</h2>
-          <ul class="footer-social">
-            <li>
-              <a class="social-button" href="#">Вконтакте</a>
-            </li>
-            <li>
-              <a class="social-button" href="#">Фейсбук</a>
-            </li>
-            <li>
-              <a class="social-button" href="#">Инстаграм</a>
-            </li>
-          </ul>
-        </section>  
-  
-        <p class="footer-mail">
-          Обратная связь:
-          <a href="#">mail@htmlacademy.ru</a>
-        </p>
-  
-        <p class="footer-copyright">
-          Разработано:
-          <a href="https://htmlacademy.ru">HTML Academy</a>
-        </p>  
+        <div class="footer-contact-wrap container">
+          <p class="copyright">© 2010–2019 Компания «Техномарт»<br>
+            Все права защищены</p>
+    
+          <section class="socials">
+            <h2 class="hidden">Давайте дружить!</h2>
+            <ul class="footer-social">
+              <li>
+                <a class="social-button" href="#">Вконтакте</a>
+              </li>
+              <li>
+                <a class="social-button" href="#">Фейсбук</a>
+              </li>
+              <li>
+                <a class="social-button" href="#">Инстаграм</a>
+              </li>
+            </ul>
+          </section>  
+    
+          <p class="footer-mail">
+            Обратная связь:
+            <a href="#">mail@htmlacademy.ru</a>
+          </p>
+    
+          <p class="footer-copyright">
+            Разработано:<br>
+            <a href="https://htmlacademy.ru">HTML Academy</a>
+          </p>  
+        </div>
       </div>
 
     </footer>

@@ -375,6 +375,11 @@ img {
     gap: 20px;
 }
 
+.catalog-list-inner {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 2/-1;
+}
+
 .catalog-item a{
     color: inherit;
 }
@@ -682,6 +687,8 @@ img {
 .pagination-list {
     list-style: none;
     padding: 0;
+    margin-top: 48px;
+    grid-row: -1/-2;
 }
     
 .pagination-item a,

@@ -14,23 +14,23 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <h1 class="hidden">Интернет-магазин «Техномарт»</h1>
+      <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
       
       <div class="main-header-bar">
         <div class="caption container">
-          <h2 class="hidden">Строка поиска</h2>
+          <h2 class="visually-hidden">Строка поиска</h2>
           <a class="logo main-header-logo">
             <img src="img/logo-technomart_108x18.svg" width="108" height="18" alt="Логотип интернет-магазина «Техномарт»">
           </a>
           <form class="caption-search">          
-            <label>
-              <input type="search" placeholder="Поиск:">
+            <label class="caption-search-link">
+              <input class="search" type="search" name="search" placeholder="Поиск:">
             </label>
           </form>
   
-          <a class="caption-bookmark" href="#">Закладки:0</a>
+          <a class="caption-bookmark" href="#">Закладки: 0</a>
   
-          <a class="caption-cart" href="#">Корзина:0</a>
+          <a class="caption-cart" href="#">Корзина: 0</a>
   
           <a class="caption-checkout" href="#">Оформить заказ</a>
         </div>
@@ -40,14 +40,18 @@
         <p class="subject">Интернет-магазин строительных материалов и инструментов для ремонта</p>
         
         <div class="contact"> 
-          <h2 class="hidden">Как нас найти</h2>
+          <h2 class="visually-hidden">Как нас найти</h2>
           <p class="contact-phone">
             <a href="tel:+78125550555">+7 (812) 555-05-55</a>
           </p>
-          <address class="contact-adress">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</address>
+          <address class="contact-adress">г. Санкт-Петербург, Б. Конюшенная, д. 19/8</address>
         </div>
 
         <div class="login">
+          <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" fill="#C5C5C5"/>
+            <path d="M16.177 15.01H11.3894V17H16.177C18.2513 17 19.038 15.19 19.0618 13.974V3.028C19.038 1.811 18.2513 0 16.177 0H11.3894V1.99H16.177C16.9761 1.99 17.1218 2.671 17.1389 3.047V13.951C17.1227 14.327 16.9761 15.01 16.177 15.01Z" fill="#C5C5C5"/>
+          </svg>
           <a class="login-link" href="#">Войти</a>
         </div>
         <div class="login">
@@ -70,7 +74,7 @@
 
     <main class="container">
       <div class="features container">
-        <h2 class="hidden">Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
           <ul class="features-list">
             <li class="features-item features-item-materials">
               <h3>Материалы</h3>
@@ -263,7 +267,7 @@
 
     <footer class="main-footer container">
       <section class="main-footer-nav">
-        <h2 class="hidden">Как нас найти</h2>
+        <h2 class="visually-hidden">Как нас найти</h2>
         <div class="main-contacts">
           <a class="logo main-footer-logo">
             <img src="img/logo-technomart_138x23.svg" width="220" height="68" alt="Логотип интернет-магазина «Техномарт»">
@@ -315,7 +319,7 @@
             Все права защищены</p>
     
           <section class="socials">
-            <h2 class="hidden">Давайте дружить!</h2>
+            <h2 class="visually-hidden">Давайте дружить!</h2>
             <ul class="footer-social">
               <li>
                 <a class="social-button" href="#">Вконтакте</a>

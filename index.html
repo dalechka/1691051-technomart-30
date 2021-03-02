@@ -61,7 +61,7 @@
       
       <nav class="site-navigation container">
         <ul class="navigation-list">
-          <li class="navigation-item"><a>Главная</a></li>
+          <li class="navigation-item"><a href="index.html">Главная</a></li>
           <li class="navigation-item"><a href="#">Компания</a></li>
           <li class="navigation-item"><a href="catalog.html">Каталог</a></li>
           <li class="navigation-item"><a href="#">Новости</a></li>
@@ -99,24 +99,29 @@
               <a class="features-button" href="#">Бесплатно</a>  
           </li>
           </ul>
-          <div class="slider">
-            <div class="slider-item slider-item-current">
-              <img src="img/worker.png" width="620" height="266" alt="Мужчина с перфоратором">
-              <h3 class="slider-title">Перфораторы</h3>
-              <p class="slider-text">Настоящие мужские игрушки</p>
+          <section class="slider">
+            <ul class="slider-list">
+              <li class="slider-item slider-item-current">
+                <img src="img/worker.png" width="620" height="266" alt="Мужчина с перфоратором">
+                <h3 class="slider-title">Перфораторы</h3>
+                <p class="slider-text">Настоящие мужские игрушки</p>
+              </li>
+              <li class="slider-item">
+                <img src="img/drill.jpg" width="620" height="266" alt="Мужчина с перфоратором">
+                <h3 class="slider-title">Дрели</h3>
+                <p class="slider-text">Соседям на радость!</p>
+              </li> 
+            </ul>
+            <div class="arrows">
+              <button class="arrow arrow-back" type="button" disabled></button>
+              <button class="arrow arrow-next" type="button"></button>
             </div>
-            <div class="slider-item">
-              <img src="img/drill.jpg" width="620" height="266" alt="Мужчина с перфоратором">
-              <h3 class="slider-title">Дрели</h3>
-              <p class="slider-text">Соседям на радость!</p>
-            </div> 
-           <div class="arrows">
-              <button class="arrow arrow-back" type="button" disabled>Назад</button>
-              <button class="arrow arrow-next" type="button">Вперед</button>
-            </div>
-
-            <button class="button" type="button">Открыть каталог</button>
-          </div>
+            <button class="button slider-button" type="button">Открыть каталог</button>
+            <div class="slider-controls">
+              <button type="button" aria-label="Первый слайд"></button>
+              <button class="current" type="button" aria-label="Второй слайд"></button>
+            </div>  
+          </section>
       </div>
       <div class="famous">
         <div class="popular">
@@ -160,8 +165,6 @@
           </ul>
         </div>  
       </div>
-      
-      
 
       <div class="famous">
         <div class="popular">
@@ -279,20 +282,20 @@
         </div>
 
         
-        <ul class="navigation-list">
-          <li class="navigation-item">
+        <ul class="footer-navigation-list">
+          <li class="footer-navigation-item">
             <a href="#">Компания</a>
           </li>
-          <li class="navigation-item">
+          <li class="footer-navigation-item">
             <a href="#">Новости</a>
           </li>
-          <li class="navigation-item">
+          <li class="footer-navigation-item">
             <a href="catalog.html">Каталог</a>
           </li>
-          <li class="navigation-item">
+          <li class="footer-navigation-item">
             <a href="#">Доставка</a>
           </li>
-          <li class="navigation-item">
+          <li class="footer-navigation-item">
             <a href="#">Контакты</a>
           </li>
         </ul>

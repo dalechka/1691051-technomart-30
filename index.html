@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
@@ -18,7 +17,7 @@
       <div class="main-header-bar">
         <div class="caption container">
           <h2 class="visually-hidden">Строка поиска</h2>
-          <a class="logo main-header-logo">
+          <a class="logo main-header-logo" href="index.html">
             <img src="img/logo-technomart_108x18.svg" width="108" height="18" alt="Логотип интернет-магазина «Техномарт»">
           </a>
           <form class="caption-search">          
@@ -33,13 +32,15 @@
       </div>
 
       <div class="main-header-info container">
-        <p class="subject">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <p class="subject">Интернет-магазин <br>
+           строительных материалов <br>
+           и инструментов для ремонта</p>
         <div class="contact"> 
           <h2 class="visually-hidden">Как нас найти</h2>
           <p class="contact-phone">
             <a href="tel:+78125550555">+7 (812) 555-05-55</a>
           </p>
-          <address class="contact-adress">г. Санкт-Петербург, Б. Конюшенная, д. 19/8</address>
+          <address class="contact-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         </div>
         <a class="login-link" href="#">
           <svg class="login-link-svg" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +109,7 @@
               <button class="arrow arrow-back" type="button" disabled></button>
               <button class="arrow arrow-next" type="button"></button>
             </div>
-            <button class="button slider-button" type="button">Открыть каталог</button>
+            <a class="button slider-button"  href="catalog.html">Открыть каталог</a>
             <div class="slider-controls">
               <button type="button" aria-label="Первый слайд"></button>
               <button class="current" type="button" aria-label="Второй слайд"></button>
@@ -124,7 +125,7 @@
           <ul class="catalog-list">
             <li class="catalog-item">
               <a href="#">
-                <h3 class="type">Перфоратор Bosch BFG 9000</h3>
+                <h3 class="type">Перфоратор BOSCH BFG 9000</h3>
               </a>
               <div class="catalog-transform catalog-transform-image">
                 <img src="img/snippet-32961.jpg" width="184" height="164" alt="Перфоратор Bosch BFG 9000">
@@ -140,7 +141,7 @@
             </li>
             <li class="catalog-item catalog-item-new">
               <a href="#">
-                <h3 class="type">Перфоратор Bosch BFG 3000</h3>
+                <h3 class="type">Перфоратор BOSCH BFG 3000</h3>
               </a>
               <div class="catalog-transform catalog-transform-image">
                 <img src="img/snippet-18927.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 3000">        
@@ -156,7 +157,7 @@
             </li>
             <li class="catalog-item">
               <a href="#">
-                <h3 class="type">Перфоратор Bosch BFG 6000</h3>
+                <h3 class="type">Перфоратор BOSCH BFG 6000</h3>
               </a>
               <div class="catalog-transform catalog-transform-image">
                 <img src="img/snippet-945.jpg" width="144" height="128" alt="Перфоратор Bosch BFG 6000">
@@ -172,7 +173,7 @@
             </li>
             <li class="catalog-item catalog-item-new">
               <a href="#">
-                <h3 class="type">Перфоратор Bosch BFG 2000</h3>
+                <h3 class="type">Перфоратор BOSCH BFG 2000</h3>
               </a>
               <div class="catalog-transform catalog-transform-image">
                 <img src="img/snippet-18927.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 2000">
@@ -244,14 +245,14 @@
           <ul class="services-switch">
             <li class="services-switch-item delivery switch-current">
               <h3 class="services-title services-title-switch">Доставка</h3>  
-              <p class="desc">Мы с удовольствием доставим ваш товар прямо<br>
+              <p class="desc switch-desc">Мы с удовольствием доставим ваш товар прямо<br>
                 к вашему подъезду совершенно бесплатно!<br>
                 Ведь мы неплохо заработаем,<br>
                 поднимая его на ваш этаж!</p>  
             </li>
             <li class="services-switch-item warranty">
               <h3 class="services-title services-title-switch">Гарантия</h3>  
-              <p class="desc">Если купленный у нас товар поломается или заискрит,<br>
+              <p class="desc switch-desc">Если купленный у нас товар поломается или заискрит,<br>
                 а также в случае пожара, спровоцированного его<br> 
                 возгоранием, вы всегда можете быть уверены в нашей<br> 
                 гарантии. Мы обменяем сгоревший товар на новый. <br> 
@@ -259,7 +260,7 @@
             </li>
             <li class="services-switch-item credit">
               <h3 class="services-title services-title-switch">Кредит</h3>  
-              <p class="desc">Залезть в долговую яму стало проще!<br>
+              <p class="desc switch-desc">Залезть в долговую яму стало проще!<br>
                 Кредитные консультанты придут вам на помощь.</p>  
               <button class="button">ОТПРАВИТЬ ЗАЯВКУ</button>
             </li>
@@ -269,10 +270,10 @@
 
       <div class="about container">
         <div>
-          <h3 class="title">КОМПАНИЯ «Техномарт»</h3>
-          <p class="desc">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <h3 class="title title-about">КОМПАНИЯ «Техномарт»</h3>
+          <p class="desc desc-about">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
 
-          <p class="desc">Мы можем доставить ваш товар в самые отдаленные точки России!
+          <p class="desc desc-about">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
           Техномарт работает со многими транспортными компаниями:</p>
           <ul class="transport-list">
             <li class="transport-item">Деловые линии</li>
@@ -282,8 +283,8 @@
           <button class="button button-about" type="button">Подробнее о компании</button>  
         </div>
         <div>
-          <h3 class="title">КОНТАКТЫ</h3>
-          <p class="desc">Вы можете забрать товар сами,<br>
+          <h3 class="title title-about">КОНТАКТЫ</h3>
+          <p class="desc desc-about desc-contacts">Вы можете забрать товар сами,<br>
             заехав в наш офис:</p>
           
             <img src="img/map.jpg" width="300" height="158" alt="Карта">
@@ -300,8 +301,7 @@
             <img src="img/logo-technomart_138x23.svg" width="220" height="68" alt="Логотип интернет-магазина «Техномарт»">
           </a>        
         <div class="main-contacts">
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
-          <p> 
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
             <a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
           </p>
         </div>
@@ -325,16 +325,16 @@
         </ul>
 
         <ul class="footer-navigation-list benefits-list">
-          <li class="footer-navigation-item">
+          <li class="footer-navigation-item footer-navigation-benefits">
             <a href="#">Материалы</a>
           </li>
-          <li class="footer-navigation-item">
+          <li class="footer-navigation-item footer-navigation-benefits">
             <a href="#">Техника</a>
           </li>
-          <li class="footer-navigation-item">
+          <li class="footer-navigation-item footer-navigation-benefits">
             <a href="#">Инструмент</a>
           </li>
-          <li class="footer-navigation-item">
+          <li class="footer-navigation-item footer-navigation-benefits">
             <a href="#">Спецпредложения</a>
           </li>
         </ul>
@@ -382,11 +382,47 @@
     
           <p class="footer-copyright">
             Разработано —<br>
-            <a href="https://htmlacademy.ru">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>  
         </div>
       </div>
     </footer>
+
+    <section class="modal modal-feedback">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post" id="feedback-field">
+        <p class="feedback-item feedback-item-name">
+          <label for="feedback-name">Ваше имя:</label>
+          <input class="feedback-username" id="feedback-name" type="text" name="username" placeholder="Имя Фамилия">
+        </p>
+        <p class="feedback-item feedback-item-email">
+          <label for="feedback-email">Ваш e-mail:</label>
+          <input class="feedback-your-mail" id="feedback-email" type="email" name="email" placeholder="email@example.com"> 
+        </p>
+        <p class="feedback-textarea">
+          <label for="feedback-feedback">Текст письма:</label>
+          <textarea class="feedback-text" id="feedback-feedback" name="feedback" placeholder="В свободной форме"></textarea>
+        </p>
+        <div class="button-background">
+          <button class="button button-feedback" type="submit">Отправить</button>
+        </div>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.2729 10.5L20.6949 3.07799C21.0839 2.68899 21.0839 2.05299 20.6949 1.66399L19.3359 0.304995C18.9469 -0.0840054 18.3109 -0.0840054 17.9219 0.304995L10.4999 7.72699L3.07793 0.304995C2.68893 -0.0840054 2.05293 -0.0840054 1.66393 0.304995L0.304934 1.66399C-0.0840664 2.05299 -0.0840664 2.68899 0.304934 3.07799L7.72693 10.5L0.305934 17.922C-0.0830664 18.311 -0.0830664 18.947 0.305934 19.336L1.66493 20.695C2.05393 21.084 2.68993 21.084 3.07893 20.695L10.5009 13.273L17.9229 20.695C18.3119 21.084 18.9479 21.084 19.3369 20.695L20.6959 19.336C21.0849 18.947 21.0849 18.311 20.6959 17.922L13.2729 10.5Z" fill="#EE3643"/>
+        </svg>          
+      </button>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться?</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.320858716070592!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1615657755938!5m2!1sru!2sru" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="943" height="449" style="border:0;" allowfullscreen="" loading="lazy"></iframe>      
+      <button class="modal-close" type="button" aria-label="Закрыть">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.2729 10.5L20.6949 3.07799C21.0839 2.68899 21.0839 2.05299 20.6949 1.66399L19.3359 0.304995C18.9469 -0.0840054 18.3109 -0.0840054 17.9219 0.304995L10.4999 7.72699L3.07793 0.304995C2.68893 -0.0840054 2.05293 -0.0840054 1.66393 0.304995L0.304934 1.66399C-0.0840664 2.05299 -0.0840664 2.68899 0.304934 3.07799L7.72693 10.5L0.305934 17.922C-0.0830664 18.311 -0.0830664 18.947 0.305934 19.336L1.66493 20.695C2.05393 21.084 2.68993 21.084 3.07893 20.695L10.5009 13.273L17.9229 20.695C18.3119 21.084 18.9479 21.084 19.3369 20.695L20.6959 19.336C21.0849 18.947 21.0849 18.311 20.6959 17.922L13.2729 10.5Z" fill="#EE3643"/>
+        </svg>          
+      </button>
+    </section>
 
   </body>
 </html>

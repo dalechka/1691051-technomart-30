@@ -5,7 +5,7 @@
     <title>HTML Academy: Техномарт</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/180.png">
@@ -287,7 +287,7 @@
           <p class="desc desc-about desc-contacts">Вы можете забрать товар сами,<br>
             заехав в наш офис:</p>
           <a class="map" href="#!">
-            <img src="img/map.jpg" width="300" height="158" alt="Карта">
+            <img src="img/map.png" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
           </a>        
           <button class="button button-stray" type="button">Заблудились? НапиШИТЕ НАМ!</button>  
         </div>
@@ -297,7 +297,7 @@
     <footer class="main-footer">
       <section class="main-footer-nav">
         <h2 class="visually-hidden">Как нас найти</h2>
-          <a class="logo main-footer-logo">
+          <a class="logo main-footer-logo" href="index.html">
             <img src="img/logo-technomart_138x23.svg" width="220" height="68" alt="Логотип интернет-магазина «Техномарт»">
           </a>        
         <div class="main-contacts">
@@ -416,14 +416,13 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться?</h2>
-      <img src="img/bigmap.png" width="943" height="449" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      <button class="modal-close" type="button" aria-label="Закрыть">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.320858716070592!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1615912281533!5m2!1sru!2sru" width="943" height="449" style="border:0;" allowfullscreen="" loading="lazy" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+       <button class="modal-close" type="button" aria-label="Закрыть">
         <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.2729 10.5L20.6949 3.07799C21.0839 2.68899 21.0839 2.05299 20.6949 1.66399L19.3359 0.304995C18.9469 -0.0840054 18.3109 -0.0840054 17.9219 0.304995L10.4999 7.72699L3.07793 0.304995C2.68893 -0.0840054 2.05293 -0.0840054 1.66393 0.304995L0.304934 1.66399C-0.0840664 2.05299 -0.0840664 2.68899 0.304934 3.07799L7.72693 10.5L0.305934 17.922C-0.0830664 18.311 -0.0830664 18.947 0.305934 19.336L1.66493 20.695C2.05393 21.084 2.68993 21.084 3.07893 20.695L10.5009 13.273L17.9229 20.695C18.3119 21.084 18.9479 21.084 19.3369 20.695L20.6959 19.336C21.0849 18.947 21.0849 18.311 20.6959 17.922L13.2729 10.5Z" fill="#EE3643"/>
         </svg>          
       </button>
     </section>
-    <script src="js/feedback.js"></script>
-    <script src="js/map.js"></script>
-  </body>
+    <script src="js/script.min.js"></script>
+    </body>
 </html>

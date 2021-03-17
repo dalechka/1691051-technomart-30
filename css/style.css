@@ -411,6 +411,7 @@ img {
     margin-top: 46px;
     margin-bottom: 67px;
     margin-left: 60px;
+    align-self: center;
 }
 
 .login-link-svg{
@@ -1252,6 +1253,7 @@ img {
         -ms-transform: translate(145px, -135px) rotate(45deg);
             transform: translate(145px, -135px) rotate(45deg);
     z-index: 5;
+    top: 145px;
 }
 
 .catalog-button-buy:hover {
@@ -1584,6 +1586,7 @@ img {
 }
 
 .button-stray {
+    display: block;
     width: 300px;
     padding-top: 11px;
     padding-bottom: 9px; 

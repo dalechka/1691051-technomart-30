@@ -48,6 +48,7 @@
     --grey-checked: #b5b5b5;
     --social-background: #212A3A;
     --modal-grey: #F4F4F4;
+    --button-shadow:#405069;
 
 
     --button-background: rgba(255, 255, 255, 0.3);
@@ -977,7 +978,7 @@ img {
     width: 10px;
     height: 10px;
     background-color: transparent;
-    border: 2px solid #ffffff;
+    border: 2px solid var(--basic-white);
     border-radius: 50%;
     cursor: pointer;
     z-index: 30;
@@ -1459,10 +1460,10 @@ img {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
-    -webkit-box-shadow: 0px 1px 0px #293449, 
-        inset 0px 1px 0px #405069;
-            box-shadow: 0px 1px 0px #293449, 
-        inset 0px 1px 0px #405069;
+    -webkit-box-shadow: 0px 1px 0px --basic-dark-grey, 
+        inset 0px 1px 0px var(--button-shadow);
+            box-shadow: 0px 1px 0px var(--basic-dark-grey), 
+        inset 0px 1px 0px var(--button-shadow);
 }
 
 .services-button:hover {
@@ -1472,6 +1473,7 @@ img {
 .services-current {
     color: var(--basic-grey);
     background-color: var(--basic-white);
+    box-shadow: none;
 }
 
 .services-current:hover {
